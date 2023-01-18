@@ -4,6 +4,8 @@ import { useShoppingCart } from '../context/ShoppingCartContext'
 import { formatCurrency } from '../utils/currencyFormat'
 import { CartItem } from './CartItem'
 import storeItems from '../data/items.json'
+import { Button, Nav, NavLink } from 'react-bootstrap'
+import { useNavigate } from 'react-router-dom'
 
 type ShoppingCartType = {
   isOpen: boolean
@@ -11,7 +13,9 @@ type ShoppingCartType = {
 
 export function ShoppingCart({isOpen}:ShoppingCartType) {
   
-  const { closeCart, cartItems } = useShoppingCart()
+  const { closeCart, cartItems, emptyCart } = useShoppingCart()
+
+  const navigate = useNavigate();
 
   return (
     <Offcanvas show={isOpen} onHide={closeCart} placement='end'>
@@ -31,6 +35,12 @@ export function ShoppingCart({isOpen}:ShoppingCartType) {
             const item = storeItems.find(storeItem => storeItem.id === cartItem.id)
             return total + (item?.price || 0) * cartItem.quantity
           }, 0 ))}
+          </div>
+          <div
+            className='ms-auto fw-bold fs-5'
+          >
+            <Button style={{margin:'5px'}} className='px-2' variant='outline-danger' size='sm' onClick={() => emptyCart()}>Empty Cart</Button>
+            <Button style={{margin:'5px'}} className='px-2' variant='outline-success' size='sm' onClick={() => {navigate('/checkout'); closeCart() } }>Go to Checkout</Button>
           </div>
         </Stack>
       </Offcanvas.Body>

@@ -6,15 +6,14 @@ import { useShoppingCart } from '../context/ShoppingCartContext'
 
 export function Navbar() {
   
-  const { openCart, closeCart, cartQuantity } = useShoppingCart()
+  const { openCart, cartQuantity } = useShoppingCart()
 
   return (
     <NavigationBar sticky='top' className='bg-white shadow-sm mb-3' >
       <Container>
         <Nav className='me-auto'>
-          <Nav.Link to={'/'} as={NavLink}>Home</Nav.Link>
           <Nav.Link to={'/store'} as={NavLink}>Store</Nav.Link>
-          <Nav.Link to={'/about'} as={NavLink}>About</Nav.Link>
+          <Nav.Link to={'/checkout'} as={NavLink}>Checkout</Nav.Link>
         </Nav>
         { cartQuantity > 0 && (
           <Button
@@ -42,7 +41,6 @@ export function Navbar() {
           >
             {cartQuantity}
           </div>
-        
           </Button>
         ) }
       </Container>

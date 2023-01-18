@@ -2,15 +2,17 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import { useShoppingCart } from '../context/ShoppingCartContext'
 import { formatCurrency } from '../utils/currencyFormat'
+import { categoryTitle } from '../utils/categoryTitle'
 
 type StoreItemType = {
   id: number,
   name: string,
+  category: string,
   price: number,
   imgUrl: string
 }
 
-export function StoreItem({ id, name, price, imgUrl }: StoreItemType) {
+export function StoreItem({ id, name, category, price, imgUrl }: StoreItemType) {
 
   const { getItemQuantity, increaseCartQuantity, decreaseCartQuantity, removeFromCart } = useShoppingCart()
   const quantity = getItemQuantity(id)
@@ -26,7 +28,10 @@ export function StoreItem({ id, name, price, imgUrl }: StoreItemType) {
       <Card.Body className='d-flex flex-column'>
         <Card.Title className='d-flex justify-content-between align-items-baseline mb-4'>
           <span className='fs-2'>{name}</span>
-          <span className='ms-2 text-muted'>{formatCurrency(price)}</span>
+          <span className='ms-2 text-muted'>
+            <p>{formatCurrency(price)}</p>
+            <p style={{fontSize:16, color:'#6E95D0'}}>{categoryTitle(category)}</p>
+          </span>
         </Card.Title>
         <div className='mt-auto'>
           {

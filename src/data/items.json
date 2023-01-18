@@ -1,26 +1,129 @@
 [
   {
     "id": 1,
-    "name": "Book",
-    "price": 10.99,
-    "imgUrl": "/imgs/book.jpg"
+    "name": "ASUS ROG Strix Scope",
+    "category": "keyboard",
+    "price": 349.99,
+    "imgUrl": "/imgs/keyboard/asus_rog_strix_scope.png"
   },
   {
     "id": 2,
-    "name": "Computer",
-    "price": 1199,
-    "imgUrl": "/imgs/computer.jpg"
+    "name": "Microsoft Compact Wired",
+    "category": "keyboard",
+    "price": 115.15,
+    "imgUrl": "/imgs/keyboard/microsoft_compact_wired.png"
   },
   {
     "id": 3,
-    "name": "Banana",
-    "price": 1.05,
-    "imgUrl": "/imgs/banana.jpg"
+    "name": "Myria HK880i",
+    "category": "keyboard",
+    "price": 690.99,
+    "imgUrl": "/imgs/keyboard/myria_hk880i.png"
   },
   {
     "id": 4,
-    "name": "Car",
-    "price": 14000,
-    "imgUrl": "/imgs/car.jpg"
+    "name": "ASUS Led TN",
+    "category": "monitor",
+    "price": 250.00,
+    "imgUrl": "/imgs/monitor/asus_led_tn.png"
+  },
+  {
+    "id": 5,
+    "name": "LG 27",
+    "category": "monitor",
+    "price": 199.99,
+    "imgUrl": "/imgs/monitor/lg_27.png"   
+  },
+  {
+    "id": 6,
+    "name": "Philips 241B4",
+    "category": "monitor",
+    "price": 199.99,
+    "imgUrl": "/imgs/monitor/philips_241b4.png"   
+  },
+  {
+    "id": 7,
+    "name": "Myria MG7515",
+    "category": "mouse",
+    "price": 25.00,
+    "imgUrl": "/imgs/mouse/myria_mg7515.png"   
+  },
+  {
+    "id": 8,
+    "name": "ASUS ROG Chakram",
+    "category": "mouse",
+    "price": 42.42,
+    "imgUrl": "/imgs/mouse/asus_rog_chakram.png"   
+  },
+  {
+    "id": 9,
+    "name": "Logitech G502 X Plus",
+    "category": "mouse",
+    "price": 36.00,
+    "imgUrl": "/imgs/mouse/logitech_g502_xplus.png"
+  },
+  {
+    "id": 10,
+    "name": "Kingston Fury 8GB",
+    "category": "ram stick",
+    "price": 16.00,
+    "imgUrl": "/imgs/ramstick/kingston_fury_8gb.png"
+  },
+  {
+    "id": 11,
+    "name": "ADATA XPG Gammix 16GB",
+    "category": "ram stick",
+    "price": 32.00,
+    "imgUrl": "/imgs/ramstick/adata_xpg_gammix_16gb.png"
+  },
+  {
+    "id": 12,
+    "name": "HyperX Fury 32GB",
+    "category": "ram stick",
+    "price": 64.00,
+    "imgUrl": "/imgs/ramstick/hyperx_fury_32gb.png"
+  },
+
+  {
+    "id": 13,
+    "name": "ASUS GTX550",
+    "category": "graphics card",
+    "price": 99.99,
+    "imgUrl": "/imgs/gpu/asus_gtx550.png"
+  },
+  {
+    "id": 14,
+    "name": "Zotac Gaming GTX1650",
+    "category": "graphics card",
+    "price": 123.45,
+    "imgUrl": "/imgs/gpu/zotac_gaming_gtx1650.png"
+  },
+  {
+    "id": 15,
+    "name": "Gigabyte RTX3080",
+    "category": "graphics card",
+    "price": 1010.10,
+    "imgUrl": "/imgs/gpu/gigabyte_rtx3080.png"
+  },
+  {
+    "id": 16,
+    "name": "Intel Core i3-4130",
+    "category": "processor",
+    "price": 123.45,
+    "imgUrl": "/imgs/cpu/core_i3_4130.png"  
+  },
+  {
+    "id": 17,
+    "name": "Intel Core i7-9700 Coffee Lake",
+    "category": "processor",
+    "price": 666.66,
+    "imgUrl": "/imgs/cpu/core_i7_9700_coffeelake.png"  
+  },
+  {
+    "id": 18,
+    "name": "Ryzen 7 3700X",
+    "category": "processor",
+    "price": 599.01,
+    "imgUrl": "/imgs/cpu/ryzen_7_3700x.png"  
   }
 ]

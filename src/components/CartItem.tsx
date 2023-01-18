@@ -25,7 +25,7 @@ export function CartItem({id, quantity}:CartItemType){
       />
       <div className='me-auto'>
         <div>
-          {item.name} {quantity > 1 && <span style={{fontSize:'.80rem', color:'rgb(100,100,255)' }}>x{quantity}</span>}
+          {item.name} {quantity > 1 && <span style={{fontSize:'.95rem', color:'rgb(100,100,255)' }}>x{quantity}</span>}
         </div>
         <div className='muted-text' style={{fontSize: '.75rem'}}>
           { formatCurrency(item.price) }
